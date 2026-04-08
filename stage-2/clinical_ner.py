@@ -10,9 +10,7 @@ class ClinicalNER:
     def extract_entities(self, text):
         if not isinstance(text, str) or not text.strip():
             return []
-        tokens = self.tokenizer.encode(text, truncation=True, max_length=510, add_special_tokens=False)
-        safe_text = self.tokenizer.decode(tokens)
-        return self.nlp(safe_text)
+        return self.nlp(text)
 
     def process_dataframe(self, df, text_col='sentence_text'):
         results = []

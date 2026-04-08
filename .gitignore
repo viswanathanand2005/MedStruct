@@ -3,5 +3,6 @@
 .env
 /docsdata/processed/*.csv
 
+docs/
 venv/
 __pycache__
