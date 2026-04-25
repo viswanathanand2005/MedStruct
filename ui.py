@@ -4,7 +4,7 @@ import pandas as pd
 from pathlib import Path
 
 st.set_page_config(layout="wide")
-st.title("MedStruct Advanced Pipeline Prototype")
+st.title("ClinExtract: Medical data structuring tool")
 
 NOTE_TYPE_OPTIONS = {
     "Discharge Summary": "discharge",
